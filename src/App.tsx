@@ -1,9 +1,18 @@
+import { BrowserRouter } from "react-router-dom"
+import { ThemeProvider } from "styled-components"
+import { Router } from "./Router"
+import { defaultTheme } from "./styles/theme/default"
+
 function App() {
 
   return (
-    <div className="App">
-      <p>Hello Coffee</p>
-    </div>
+    <>
+    <ThemeProvider theme={defaultTheme}>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </ThemeProvider>
+    </>
   )
 }
 
