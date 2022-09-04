@@ -1,5 +1,10 @@
+import { OrderInformation } from "./OrderInformation";
+import { Container } from "./styles";
+
 export function Checkout(){
     return (
-        <h1>Checkput</h1>
+        <Container>
+            <OrderInformation />
+        </Container>
     )
 }

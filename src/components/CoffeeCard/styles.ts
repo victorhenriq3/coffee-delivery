@@ -157,7 +157,6 @@ export const CartContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 8px;
-    /* width: 38px; */
     gap: 8px;
     background: ${props => props.theme["purple-dark"]};
     border-radius: 6px;
