@@ -17,3 +17,7 @@ export const AddressContainer = styled.div`
     background-color: ${props => props.theme["base-card"]};
     border-radius: 6px;
 `
+
+export const HeaderAddress = styled.div``
+
+export const TitleContainer = styled.div``
