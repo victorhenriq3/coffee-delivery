@@ -1,14 +1,17 @@
 import { CoffeeCard } from "../CoffeeCard";
-import { Container } from "./styles";
+import { Container, Title } from "./styles";
 
 export function CoffeeList(){
     return (
-        <Container>
-            <CoffeeCard />
-            <CoffeeCard />
-            <CoffeeCard />
-            <CoffeeCard />
-            <CoffeeCard />
-        </Container>
+        <>
+            <Title>Nossos Cafés</Title>
+            <Container>
+                <CoffeeCard />
+                <CoffeeCard />
+                <CoffeeCard />
+                <CoffeeCard />
+                <CoffeeCard />
+            </Container>
+        </>
     )
 }
