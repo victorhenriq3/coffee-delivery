@@ -2,17 +2,16 @@ import styled from "styled-components";
 
 export const Card = styled.div`
     width: 256px;
-    height: 330px;
+    height: 310px;
     background-color: ${props => props.theme["base-card"]};
     border-radius: 6px 36px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
+    margin-right: 15px;
 `
 
 export const CoffeeImage = styled.div`
-    position: absolute;
-    top: -20px;
-    left: calc(50% - 120px/2);
+    margin-top: -20px;
+    margin-left: calc(50% - 120px/2);
     
     img{
         width: 120px;
@@ -27,13 +26,12 @@ export const Tags = styled.div`
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    position: absolute;
     padding: 0px;
     gap: 4px;
     width: 81px;
     height: 21px;
-    left: calc(50% - 81px/2);
-    top: 112px;
+    margin-left: calc(50% - 81px/2);
+    margin-top: 12px;
 `
 
 export const Tag = styled.span`
@@ -54,12 +52,8 @@ export const Tag = styled.span`
 `
 
 export const Title = styled.h1`
-    position: absolute;
     height: 26px;
-    left: calc(50% - 190px/2);
-    right: 20px;
-    top: 149px;
-
+    margin-left: calc(50% - 190px/2);
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 700;
@@ -72,11 +66,8 @@ export const Title = styled.h1`
 `
 
 export const Description = styled.p`
-    position: absolute;
     height: 36px;
-    left: 20px;
-    right: 20px;
-    top: 183px;
+    padding: 0 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -91,13 +82,9 @@ export const Buy = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0px;
-    gap: 29px;
-    position: absolute;
+    padding: 0 24px;
+    margin-top: 33px;
     height: 38px;
-    left: 24px;
-    right: 24px;
-    bottom: 20px;
 `
 
 export const Price = styled.div`
@@ -146,7 +133,6 @@ export const Counter = styled.div`
     border-radius: 6px;
     background-color: ${props => props.theme["base-button"]};
     width: 64px;    
-    /* height: 30px; */
 
     svg{
         color: #8047F8;
