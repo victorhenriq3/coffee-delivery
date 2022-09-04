@@ -135,7 +135,8 @@ export const Counter = styled.div`
     width: 64px;    
 
     svg{
-        color: #8047F8;
+        cursor: pointer;
+        color: ${props => props.theme["purple"]};
     }
 `
 
