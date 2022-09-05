@@ -18,6 +18,17 @@ export const AddressContainer = styled.div`
     border-radius: 6px;
 `
 
-export const HeaderAddress = styled.div``
+export const HeaderAddress = styled.div`
+    display: flex;
+    flex-direction: row;
+`
 
-export const TitleContainer = styled.div``
+export const TitleContainer = styled.div`
+    h1{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 130%;
+    }
+`
