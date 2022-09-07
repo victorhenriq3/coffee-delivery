@@ -21,14 +21,37 @@ export const AddressContainer = styled.div`
 export const HeaderAddress = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    height: 44px;
+  
+  svg{
+    color: ${props => props.theme["yellow-dark"]};
+    width: 22px;
+    height: 22px;
+  }
 `
 
 export const TitleContainer = styled.div`
-    h1{
-        font-family: 'Roboto';
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  
+    span{
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 1rem;
         line-height: 130%;
+        color: ${props => props.theme["base-subtitle"]};
+        margin-bottom: -10px;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 130%;
+        color: ${props => props.theme["base-text"]};
     }
 `

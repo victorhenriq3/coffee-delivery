@@ -15,7 +15,7 @@ export function OrderInformation(){
                 <HeaderAddress>
                     <MapPinLine />
                     <TitleContainer>
-                        <h1>Endereço de entrega</h1>
+                        <span>Endereço de entrega</span>
                         <p>Informe o endereço onde deseja receber seu pedido</p>
                     </TitleContainer>
                 </HeaderAddress>
