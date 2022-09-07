@@ -55,3 +55,16 @@ export const TitleContainer = styled.div`
         color: ${props => props.theme["base-text"]};
     }
 `
+
+export const FormContainer = styled.form``
+
+export const BaseInput = styled.input`
+  background-color: ${props => props.theme["base-input"]};
+  border: 1px solid ${props => props.theme["base-button"]};
+  border-radius: 4px;
+  padding: 12px;
+`
+
+export const CepInput = styled(BaseInput)``
+
+export const StreetInput = styled(BaseInput)``

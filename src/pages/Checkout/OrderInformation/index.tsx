@@ -4,7 +4,10 @@ import {
     Title,
     AddressContainer,
     HeaderAddress,
-    TitleContainer
+    TitleContainer,
+    FormContainer,
+    CepInput,
+    StreetInput
 } from "./styles";
 
 export function OrderInformation(){
@@ -19,6 +22,10 @@ export function OrderInformation(){
                         <p>Informe o endereço onde deseja receber seu pedido</p>
                     </TitleContainer>
                 </HeaderAddress>
+                <FormContainer>
+                    <CepInput type="text" placeholder="CEP"/>
+                    <StreetInput type="text" placeholder="Rua"/>
+                </FormContainer>
             </AddressContainer>
         </OrderContainer>
     )
