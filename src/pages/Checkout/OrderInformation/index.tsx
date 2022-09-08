@@ -7,7 +7,12 @@ import {
     TitleContainer,
     FormContainer,
     CepInput,
-    StreetInput
+    StreetInput,
+    NumberInput,
+    ComplementInput,
+    DistrictInput,
+    CityInput,
+    UfInput
 } from "./styles";
 
 export function OrderInformation(){
@@ -23,8 +28,19 @@ export function OrderInformation(){
                     </TitleContainer>
                 </HeaderAddress>
                 <FormContainer>
-                    <CepInput type="text" placeholder="CEP"/>
-                    <StreetInput type="text" placeholder="Rua"/>
+                    <div className="column-input">
+                        <CepInput type="text" placeholder="CEP"/>
+                        <StreetInput type="text" placeholder="Rua"/>
+                    </div>
+                    <div className="inline-input">
+                        <NumberInput type="text" placeholder="Número"/>
+                        <ComplementInput type="text" placeholder="Complemento"/>
+                    </div>
+                    <div className="inline-input">
+                        <DistrictInput type="text" placeholder="Bairro"/>
+                        <CityInput type="text" placeholder="Cidade"/>
+                        <UfInput type="text" placeholder="UF"/>
+                    </div>
                 </FormContainer>
             </AddressContainer>
         </OrderContainer>
