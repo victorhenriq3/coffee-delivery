@@ -8,7 +8,7 @@ export const Container = styled.div`
       gap: 32px;
 
       width: 640px;
-      height: 207px;
+      height: 127px;
   
       background: ${props => props.theme["base-card"]};
       border-radius: 6px;
@@ -51,4 +51,8 @@ export const TitleContainer = styled.div`
         line-height: 130%;
         color: ${props => props.theme["base-text"]};
     }
+`
+export const TypesPayments = styled.div`
+  display: flex;
+  gap: 12px;
 `
