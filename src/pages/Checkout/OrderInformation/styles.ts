@@ -2,7 +2,15 @@ import styled from "styled-components";
 
 export const OrderContainer = styled.div``
 
-export const Title = styled.div``
+export const Title = styled.div`
+  font-family: 'Baloo 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: ${props => props.theme["base-subtitle"]};
+  margin-bottom: 15px;
+`
 
 export const AddressContainer = styled.div`
     display: flex;
@@ -12,7 +20,7 @@ export const AddressContainer = styled.div`
     gap: 32px;
 
     width: 640px;
-    height: 372px;
+    height: 302px;
 
     background-color: ${props => props.theme["base-card"]};
     border-radius: 6px;
